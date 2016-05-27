@@ -18,9 +18,10 @@ render(
 
 if (module.hot) {
   module.hot.accept('./layouts/Root', () => {
+    const NextRoot = require('layouts/Root').default
     render(
       <AppContainer>
-        <Root store={store} />
+        <NextRoot store={store} />
       </AppContainer>,
     document.getElementById('app')
     )
