@@ -13,7 +13,7 @@ class <%= pascalEntityName %> extends React.Component {
 }
 
 <%= pascalEntityName %>.propTypes = {
-  name: PropTypes.string.isRequired
+  className: PropTypes.string
 }
 
 export default <%= pascalEntityName %>
