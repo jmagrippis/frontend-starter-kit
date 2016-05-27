@@ -4,8 +4,8 @@ import { render } from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 import 'normalize.css'
 
-import configureStore from './store/configureStore'
-import Root from './layouts/Root'
+import configureStore from 'store/configureStore'
+import Root from 'layouts/Root'
 
 const store = configureStore()
 
