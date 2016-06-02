@@ -6,7 +6,10 @@ import <%= pascalEntityName %> from 'components/<%= pascalEntityName %>'
 
 describe('(Component) <%= pascalEntityName %>', () => {
   it('should exist', () => {
-    let wrapper = shallow(<<%= pascalEntityName %> />)
-    expect(wrapper.text()).to.equal('foo')
+    let data = {
+      title: 'sample'
+    }
+    let wrapper = shallow(<<%= pascalEntityName %> {...data} />)
+    expect(wrapper.text()).to.equal(data.name)
   })
 })

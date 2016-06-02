@@ -8,12 +8,14 @@ class <%= pascalEntityName %> extends React.Component {
   }
 
   render () {
-    return <div className={this.props.className}>foo</div>
+    { className, title }
+    return <div className={className}>{title}</div>
   }
 }
 
 <%= pascalEntityName %>.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
+  title: PropTypes.string.isRequired
 }
 
 export default <%= pascalEntityName %>

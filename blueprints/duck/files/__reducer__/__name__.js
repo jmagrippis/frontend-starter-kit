@@ -1,15 +1,15 @@
 import { Map } from 'immutable'
 
 // Constants
-// export const ACTION_NAME = 'ACTION_NAME'
+export const ACTION_NAME = 'ACTION_NAME'
 
 // Action Creators
-// export const actionName = (action) => {
-//   return {
-//     type: ACTION_NAME,
-//     action
-//   }
-// }
+export const setActionName = (action) => {
+  return {
+    type: ACTION_NAME,
+    action
+  }
+}
 
 // Reducer
 export const defaultState = Map({
