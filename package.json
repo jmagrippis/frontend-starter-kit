@@ -1,6 +1,6 @@
 {
   "name": "frontend-starter-kit",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A boilerplate for kicking off frontend work.",
   "main": "index.jsx",
   "scripts": {
